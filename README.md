@@ -109,7 +109,7 @@ theme: butterfly
 修改這個文件：,記得添加 `type: "tags"`
 ```md
 ---
-title: 標籤
+title: 标签
 date: 2018-01-05 00:00:00
 type: "tags"
 orderby: random
@@ -124,6 +124,40 @@ order: 1
 
 
 2. 配置分类
+輸入 `hexo new page categories`,修改這個index.md文件
+```sh
+---
+title: 分类
+date: 2024-03-19 00:00:00
+type: "categories"
+---
+```
+
+
+### github部署
+1. github创建命名为{username}.github.io的仓库
+2. 安装git工具
+```
+npm install hexo-deployer-git --save
+```
+3. _config.yml配置
+配置url和root，还有deploy信息
+```sh
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://mylofty.github.io
+root: /mylofty.github.io
+deploy:
+  type: git
+  repo: https://github.com/mylofty/mylofty.github.io.git
+  branch: main
+```
+4. 发布部署
+```sh
+hexo deploy
+# hexo clean && hexo generate && hexo deploy
+```
+5. 访问 https://mylofty.github.io
 
 
 ## vuepress项目搭建
@@ -182,6 +216,8 @@ tag:
 ```sh
 [[toc]]
 ```
+
+
 
 
 
