@@ -1,6 +1,8 @@
 # gogo
 爱开源GoGo博客系统
 
+- Node.js v18.16.0+
+
 ## hexo项目搭建
 前往[hexo官方文档](https://hexo.io/zh-cn/docs/commands.html)
 ### 项目创建
