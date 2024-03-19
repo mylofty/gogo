@@ -100,8 +100,11 @@ ignore:
 theme: butterfly
 
 # Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
+## Docs: https://hexo.io/docs/one-command-deployment_Dzm94
 deploy:
-  type: git
-  repo: https://github.com/mylofty/mylofty.github.io.git
-  branch: main
+  - type: git
+    repo: https://github.com/mylofty/mylofty.github.io.git
+    branch: main
+  - type: git
+    repo: root@175.178.117.77:/data/GitLibrary/hexo.git
+    branch: master
