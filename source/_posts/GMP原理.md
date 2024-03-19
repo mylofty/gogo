@@ -3,7 +3,6 @@ title: GMP原理
 date: 2023-03-05
 category:
   - Go
-  - CategoryB
 tag:
   - Go
 ---
