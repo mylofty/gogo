@@ -39,3 +39,4 @@ Campact 可以翻译成压缩，也可以被称为压实，其作用主要有：
 参考文献：
 深入RocksDB原理 https://zhuanlan.zhihu.com/p/616209332
 RocksDB学习记录 https://km.woa.com/articles/show/506592
+RocksDB上锁机制 https://www.cnblogs.com/cchust/p/7107392.html
