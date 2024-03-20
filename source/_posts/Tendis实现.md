@@ -33,7 +33,8 @@ excerpt: <p>tendis实现原理.</p>
 
 ## 潜在常见问题
 ### 1. 缓存与数据库数据一致性
-```mermaid
+<!-- ```mermaid -->
+{% mermaid %}
 sequenceDiagram
 title: 写策略二：先删缓存再更新数据库
 participant 请求A
@@ -48,7 +49,8 @@ participant 数据库
 缓存 ->> 缓存: [A]更新缓存为旧值20 
 缓存 ->> 数据库: [B]异步组件将21更新到数据库
 缓存 --> 数据库: 缓存旧值20和数据库新值21不一致
-```
+{% endmermaid %}
+<!-- ``` -->
 **解决办法：**
 如果需要从 Tendisplus 中恢复数据，则请求 A 和 B 都阻塞。当数据恢复后，再唤醒阻塞的请求 A 和 B， 缓存和后端 Tendisplus 最终是一致的。
 如果不需要从 Tendisplus 中恢复数据，则请求 A 和 B 肯定是顺序执行的，不会出现不一致的行为。

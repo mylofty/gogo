@@ -1,4 +1,4 @@
-import comp from "/Users/jimmy/workspace/gogo/vuepress/docs/.vuepress/.temp/pages/tag/vue/index.html.vue"
+import comp from "/Users/jimmy/workspace/gogo/vuepress-starter/docs/.vuepress/.temp/pages/tag/vue/index.html.vue"
 const data = JSON.parse("{\"path\":\"/tag/vue/\",\"title\":\"Tag vue\",\"lang\":\"zh-cn\",\"frontmatter\":{\"title\":\"Tag vue\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"vue\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 

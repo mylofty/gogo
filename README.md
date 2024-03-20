@@ -135,6 +135,20 @@ type: "categories"
 ---
 ```
 
+### flow插件安装
+
+#### mermaid配置
+修改主题butterfly的_config.yml，将mermaid设置为true
+需要使用的地方，使用如下语法来写
+```
+{% mermaid %}
+sequenceDiagram
+title: 写策略二：先删缓存再更新数据库
+participant 请求A
+participant 缓存
+请求A ->> 缓存: [A]读缓存 
+{% endmermaid %}
+```
 
 ### github部署
 1. github创建命名为{username}.github.io的仓库
