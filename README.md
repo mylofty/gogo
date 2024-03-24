@@ -23,6 +23,7 @@ $ hexo new "My New Post"
 也可以直接在source/_posts目录下面创建一个`xxx.md`文件
 4. 启动服务
 ``` bash
+# npm install 首次拉取代码需要安装node_modules
 $ hexo server
 ```
 
@@ -103,6 +104,11 @@ theme: butterfly
 ```
 #### bufferfly主题安装
 前往官方[安装文档](https://butterfly.js.org/posts/dc584b87/#Page-Front-matter)
+
+#### 主题保存到git中
+由于clone下来的butterfly是一个git仓库，所以没办法加入到当前仓库中，需要删除themes/butterfly中的`.git`目录才可以执行`git add .`
+
+当仍然无法add进去，可以copy一份，然后再加入到路径中
 
 #### 配置tags和category
 1. 配置tags
