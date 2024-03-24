@@ -2,6 +2,7 @@
 title: markdown时序图
 date: 2024-03-24 16:51:12
 tags:
+description: Markdown工具和资料参考，包括时序图，流程图，类图，饼图，状态机等
 ---
 
  Markdown工具和资料参考
